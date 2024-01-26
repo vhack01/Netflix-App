@@ -1,0 +1,99 @@
+.banner {
+  position: relative;
+  object-fit: contain;
+  height: 75rem;
+  overflow: hidden;
+}
+
+.banner__left {
+  background-image: linear-gradient(to right, #000000f0, #000000a1, #00000000);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-self: center; */
+}
+.banner__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  bottom: 1rem;
+  /* left: 4rem; */
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+.banner__title {
+  font-size: 4rem;
+}
+
+.banner__description {
+  width: 40ch;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* banner buttons */
+
+.btn--white {
+  background-color: #fff;
+  color: #161616;
+}
+
+.btn--grey {
+  background-color: #272626;
+  color: #eae6e6;
+}
+
+.link--item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner__buttons {
+  /* background-color: rgb(178, 22, 22); */
+  color: #fff;
+  display: flex;
+}
+
+.button__icons {
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 4px;
+  font-weight: 600;
+}
+
+.btn-icon--mg {
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__left {
+    /* justify-content: flex-start; */
+  }
+  .banner__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    align-self: center;
+    margin-left: 4rem;
+  }
+  .banner__title {
+    font-size: 8rem;
+  }
+  .banner__description {
+    text-align: left;
+    width: 60ch;
+    font-size: 2rem;
+  }
+  /* banner__contents */
+}

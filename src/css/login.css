@@ -1,0 +1,210 @@
+.login__container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primaryColor);
+  background-image: url("https://authors.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg");
+}
+
+.login__content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* background-image: linear-gradient(to top, #00000085, #0000002b); */
+  background-image: linear-gradient(to top, #00000033, #00000012);
+  display: grid;
+  /* grid-template: 20% auto 40% / repeat(1); */
+}
+
+/* login nav */
+.login__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  background-color: #000;
+}
+
+.login__logo {
+  height: 100%;
+  width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .login__nav {
+    background-color: transparent;
+  }
+  .login__logo {
+    width: 12%;
+  }
+}
+
+/* login box */
+.login__box {
+  height: auto;
+  width: 100%;
+  /* border: var(--greenBorder); */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__box--shadow {
+  background-color: #000000c9;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__subbox {
+  height: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+@media screen and (min-width: 768px) {
+  .login__box--shadow {
+    height: 60rem;
+    width: 45rem;
+    border-radius: 6px;
+  }
+  .login__subbox {
+    width: 80%;
+  }
+}
+
+/* input  */
+.input__group {
+  margin: 25px 0;
+}
+.input__group__container {
+  color: #fff;
+  height: 5.5rem;
+  width: 100%;
+  background-color: rgb(56, 55, 55);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.input__group__container:focus-within {
+  background-color: rgb(64, 63, 63);
+}
+
+.login__group__label {
+  font-size: 1.7rem;
+  margin-bottom: 2px;
+  color: grey;
+  position: absolute;
+  top: 15px;
+  transition: all 0.3s;
+}
+
+.login__group__input {
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+.label__focus {
+  position: absolute;
+  top: 3px;
+  font-size: 1.4rem;
+}
+
+.login__title {
+  font-size: 2.5rem;
+}
+
+.login__btn {
+  margin-top: 2rem;
+  height: 5rem;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--secondaryTextColor);
+  color: var(--primaryTextColor);
+  font-weight: bold;
+  font-size: 1.8rem;
+  outline: none;
+  cursor: pointer;
+}
+.login__btn:hover {
+  background-color: rgb(227, 27, 27);
+}
+
+.login__error {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: orange;
+}
+
+/* login checkbox */
+
+.login__help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.login__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.login__needHelp {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login__newAccount-message {
+  margin-top: 5rem;
+}
+
+.login__signup-message {
+  font-size: 1.6rem;
+}
+
+.login__new-to-netflix {
+  color: grey;
+}
+
+.login__protect-messge {
+  font-size: 1.3rem;
+}
+
+.login__signup-link {
+  color: var(--primaryTextColor);
+  text-decoration: none;
+}
+
+.login__signup-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Signup */
+.signup__login-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.signup__login-link > span {
+  margin: 0 5px;
+}
